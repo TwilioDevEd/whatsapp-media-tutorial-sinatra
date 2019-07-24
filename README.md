@@ -5,7 +5,7 @@
 # Receive, Download, and Reply with media in WhatsApp Messages. Powered by Twilio - Ruby
 
 Use Twilio to receive WhatsApp media messages. For a step-by-step tutorial see
-the [Twilio docs](https://www.twilio.com/docs/sms/tutorials/send-and-receive-media-messages-whatsapp-php).
+the [Twilio docs](https://www.twilio.com/docs/sms/tutorials/send-and-receive-media-messages-whatsapp-ruby).
 
 ## Local development
 This project is built using the [Sinatra](http://sinatrarb.com/) web framework.
@@ -13,8 +13,8 @@ This project is built using the [Sinatra](http://sinatrarb.com/) web framework.
 1. First clone this repository and `cd` into it
 
    ```bash
-   $ git clone git@github.com:TwilioDevEd/whatsapp-media-tutorial-ruby.git
-   $ cd whatsapp-media-tutorial-ruby
+   $ git clone git@github.com:TwilioDevEd/whatsapp-media-tutorial-sinatra.git
+   $ cd whatsapp-media-tutorial-sinatra
    ```
 
 1. Install the dependencies
