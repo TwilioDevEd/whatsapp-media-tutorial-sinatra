@@ -4,3 +4,6 @@ rvm:
 
 install:
   - bundle
+
+script:
+  - bin/rake
