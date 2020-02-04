@@ -19,7 +19,6 @@ RSpec.describe 'whatsapp webhook tests' do
 
     expect(last_response).to be_ok
     expect(last_response.body).to include('<Body>Send us an image!</Body>')
-    expect(last_response.body).to include("<Media>#{CGI.escapeHTML(GOOD_BOY)}</Media>")
   end
 
   it 'test post with an image' do
@@ -29,7 +28,7 @@ RSpec.describe 'whatsapp webhook tests' do
     post '/whatsapp' , params={:NumMedia => 1, :MediaUrl0 => 'http://sample.org/file', :MediaContentType0 => 'text/plain'}
 
     expect(last_response).to be_ok
-    expect(last_response.body).to include('<Body>Thanks for the image(s).</Body>')
+    expect(last_response.body).to include('<Body>Thanks for the image! Here\'s one for you!</Body>')
     expect(last_response.body).to include("<Media>#{CGI.escapeHTML(GOOD_BOY)}</Media>")
   end
 
